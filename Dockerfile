@@ -4,15 +4,15 @@ FROM ubuntu:questing-20260610 AS build
 ARG TARGETOS
 ARG TARGETARCH
 # renovate: datasource=github-releases depName=actions/runner
-ARG RUNNER_VERSION=2.336.0
+ARG RUNNER_VERSION=2.337.0
 # update these together with RUNNER_VERSION from upstream
 ARG RUNNER_CONTAINER_HOOKS_VERSION=0.7.0
-ARG DOCKER_VERSION=29.7.1
-ARG BUILDX_VERSION=0.36.0
+ARG DOCKER_VERSION=29.7.2
+ARG BUILDX_VERSION=0.36.1
 # renovate: datasource=github-releases depName=kubernetes/kubernetes
-ARG KUBECTL_VERSION=v1.36.3
+ARG KUBECTL_VERSION=v1.37.0
 # renovate: datasource=github-releases depName=helm/helm
-ARG HELM_VERSION=v4.2.3
+ARG HELM_VERSION=v4.2.4
 # renovate: datasource=github-releases depName=sigstore/cosign
 ARG COSIGN_VERSION=v3.1.3
 
@@ -67,13 +67,13 @@ ARG TARGETOS
 ARG TARGETARCH
 
 # renovate: datasource=github-releases depName=google/go-containerregistry
-ARG CRANE_VERSION=v0.21.9
+ARG CRANE_VERSION=v0.22.0
 # renovate: datasource=github-releases depName=mikefarah/yq
-ARG YQ_VERSION=v4.53.3
+ARG YQ_VERSION=v4.53.6
 # renovate: datasource=github-releases depName=getsops/sops
 ARG SOPS_VERSION=v3.13.3
 # renovate: datasource=github-tags depName=aws/aws-cli
-ARG AWSCLI_VERSION=2.36.18
+ARG AWSCLI_VERSION=2.36.31
 # renovate: datasource=github-releases depName=kubernetes-sigs/krew
 ARG KREW_VERSION=v0.5.0
 
