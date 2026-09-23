@@ -143,6 +143,7 @@ RUN apt-get update -y && \
     swtpm \
     tmux \
     unzip \
+    libvirt-clients \
     zstd \
     net-tools \
     && rm -rf /var/lib/apt/lists/*
